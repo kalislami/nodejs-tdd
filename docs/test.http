@@ -1,0 +1,39 @@
+### register
+POST http://localhost:3000/api/user
+content-type: application/json
+
+{
+    "username": "kamal",
+    "password": "kamal",
+    "name": "M Kamaludien"
+}
+
+### login
+POST http://localhost:3000/api/user/login
+content-type: application/json
+
+{
+    "username": "kamal",
+    "password": "rahasia123"
+}
+
+### login oauth
+POST http://localhost:3000/api/user/login/oauth
+content-type: application/json
+
+{
+    "name": "M Kamaludien 873927982",
+    "oauth_id": "ini_oauth_id"
+}
+
+### delete
+DELETE  http://localhost:3000/api/user
+content-type: application/json
+
+{
+    "username": "mkamaludien"
+}
+
+### delete all
+DELETE  http://localhost:3000/api/user/all
+content-type: application/json
